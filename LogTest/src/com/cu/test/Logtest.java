@@ -3,7 +3,7 @@ package com.cu.test;
 import org.apache.log4j.Logger;
 
 public class Logtest {
-	private static Logger log = Logger.getLogger(Logger.class);
+	private static Logger log = Logger.getLogger("com.cu.test.Logtest");
 	public void add(){  
         /** 
          * 此外可以指定用哪个日志，myTest1或者myTest2 
@@ -11,10 +11,10 @@ public class Logtest {
          * 另外一个标签也会执行，不会没有输出内容 
          */  
         for(int i=0;i<10;i++){  
-            log.debug("DDDDDDDDDDDDD");  
-            log.info("IIIIIIIIIIIIIIIIII");  
-            log.warn("WWWWWWWWWWWWWWWWWWWWWW");  
-            log.error("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");  
+            log.debug("DDDDDDDDDDDDD");
+            log.info("IIIIIIIIIIIIIIIIII");
+            log.warn("WWWWWWWWWWWWWWWWWWWWWW");
+            log.error("EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
         }  
     }  
       
