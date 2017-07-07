@@ -59,20 +59,13 @@ function checklogin() {
 	        },
 	        async: true,
 	        //异步请求（true）,默认是异步，同步是false
-	        error: function()
-            {
-        		alert("错误");
+	        error: function() {
+        		alert("ajax错误");
         	},   
-	        success: function(data)
-	        {   
-	            //alert(data.flag);
-	            /*
-	        	if (data.flag == false){
-	            	alert("用户名密码错误");
-	            }else{
-	            	window.location.href="/dianshang/index.jsp";
+	        success: function(json) {   
+	            if(json.code == "200") {
+	            	alert("日记记录成功！")
 	            }
-	            */
 	        }   
 	    });
 	}
