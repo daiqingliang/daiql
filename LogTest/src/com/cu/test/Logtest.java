@@ -1,4 +1,4 @@
-package com;
+package com.cu.test;
 
 import org.apache.log4j.Logger;
 
